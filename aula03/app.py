@@ -1,10 +1,10 @@
 import pandas as pd
-import streamlit as st
+import streamlit as st           #precisa executar no teminal o comando pip install streamlit
 import plotly.express as px
 from sklearn.ensemble import RandomForestRegressor
 
 # função para carregar o dataset
-@st.cache
+@st.cache 
 def get_data():
     return pd.read_csv("model/data.csv")
 
